@@ -32,7 +32,7 @@ public class Main {
   private static void buy(Customer customer, Snack snack, int quantity) {
     customer.buySnacks(snack, 3);
     System.out.printf(
-      "%s cash on hand $%.2f%n",
+      "%s cash on hand $%,.2f%n",
       customer.getName(),
       customer.getCash()
     );
@@ -55,7 +55,7 @@ public class Main {
   private static void topUp(Customer customer, int cash) {
     customer.addCash(cash);
     System.out.printf(
-      "%s cash on hand $%.2f%n%n",
+      "%s cash on hand $%,.2f%n%n",
       customer.getName(),
       customer.getCash()
     );
