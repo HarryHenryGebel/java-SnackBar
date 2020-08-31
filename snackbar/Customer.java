@@ -30,4 +30,12 @@ public class Customer {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public void addCash(double num) {
+		this.cash = cash + num;
+	}
+
+	public void buySnacks(int num) {
+		this.cash = cash - num;
+	}
 }
