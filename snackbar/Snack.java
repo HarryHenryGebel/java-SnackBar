@@ -9,8 +9,8 @@ public class Snack {
 	private int vendingMachineId;
 
 	public Snack(String name, int quantity, double cost, int vendingMachineID) {
-		maxId++;
-		id = maxId;
+		maximumId++;
+		id = maximumId;
 		this.name = name;
 		this.quantity = quantity;
 		this.cost = cost;
