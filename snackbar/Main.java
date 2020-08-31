@@ -12,10 +12,21 @@ public class Main {
     VendingMachine VendingMachine = new VendingMachine("Office");
 
     // create snacks
-    Snack chips = new Snack("Chips", 36, 1.75, foodMachine.getId());
+    Snack chips = new Snack("Chips", 36, 1.75, foodMachine);
     Snack chocolateBar =
-      new Snack("Chocolate Bar", 36, 2.5, foodMachine.getId());
-    Snack pretzels = new Snack("Pretzel", 30, 2, foodMachine.getId());
-    Snack sodas = new Snack("Soda", 24, 2.50, drinkMachine.getId());
-    Snack waters = new Snack("Water", 20, 2.75, drinkMachine.getId());
+      new Snack("Chocolate Bar", 36, 2.5, foodMachine);
+    Snack pretzels = new Snack("Pretzel", 30, 2, foodMachine);
+    Snack sodas = new Snack("Soda", 24, 2.50, drinkMachine);
+    Snack waters = new Snack("Water", 20, 2.75, drinkMachine);
+
+    // non stretch operations
+    buy(jane, sodas, 3);
+
+  private buy(Customer customer, Snack snack, long quantity) {
+    customer.buySnacks(snack, 3);
+    System.out.
+      printf("%s cash on hand $%.2f", customer.getName(), customer.getCash());
+    System.out.
+      printf("Quantity of %s is %d", snack.getName(), snack.getQuantity());
+  }
 }

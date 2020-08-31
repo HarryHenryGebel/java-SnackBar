@@ -32,7 +32,7 @@ public class Customer {
 	}
 
 	public void addCash(double number) {
-		this.cash = cash + number;
+		this.cash += number;
 	}
 
 	public void buySnacks(Snack snack, int number) {
