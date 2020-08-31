@@ -29,7 +29,7 @@ public class Main {
 
   }
 
-  private void buy(Customer customer, Snack snack, int quantity) {
+  private static void buy(Customer customer, Snack snack, int quantity) {
     customer.buySnacks(snack, 3);
     System.out.
       printf("%s cash on hand $%.2f%n", customer.getName(), customer.getCash());
@@ -37,13 +37,13 @@ public class Main {
       printf("Quantity of %s is %d%n%n", snack.getName(), snack.getQuantity());
   }
 
-  private void stock(Snack snack, int quantity) {
+  private static void stock(Snack snack, int quantity) {
     snack.stockSnacks(quantity);
     System.out.
       printf("Quantity of %s is %d%n%n", snack.getName(), snack.getQuantity());
   }
 
-  private void topUp(Customer customer, int cash) {
+  private static void topUp(Customer customer, int cash) {
     customer.addCash(cash);
     System.out.
       printf("%s cash on hand $%.2f%n%n", customer.getName(), customer.getCash());
