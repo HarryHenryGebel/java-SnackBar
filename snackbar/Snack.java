@@ -6,7 +6,9 @@ public class Snack {
 	private String name;
 	private int quantity;
 	private double cost;
-	private int vendingMachineId;
+
+  // If this were a database join, the spec would be right. But it's not.
+  private VendingMachine vendingMachine;
 
 	public
     Snack(String name, int quantity, double cost, VendingMachine vendingMachine) {
@@ -15,7 +17,7 @@ public class Snack {
 		this.name = name;
 		this.quantity = quantity;
 		this.cost = cost;
-		this.vendingMachineId = vendingMachine.getId();
+		this.vendingMachine = vendingMachine;
 	}
 
 	public int getId() {
@@ -34,8 +36,8 @@ public class Snack {
 		return cost;
 	}
 
-	public int getVendingMachineId() {
-		return vendingMachineId;
+	public VendingMachine getVendingMachine() {
+		return vendingMachine;
 	}
 
 	public double getTotalCost(){
@@ -50,8 +52,8 @@ public class Snack {
 		this.cost = cost;
 	}
 
-	public void setVendingMachineId(VendingMachine vendingMachine) {
-		this.vendingMachineId = vendingMachine.getId();
+	public void setVendingMachine(VendingMachine vendingMachine) {
+		this.vendingMachine = vendingMachine;
 	}
 
 	public void sellSnacks(int number) {
