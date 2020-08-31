@@ -61,6 +61,6 @@ public class Snack {
 	}
 
   public void stockSnacks(int number) {
-		this.quantity -= number;
+		this.quantity += number;
 	}
 }
