@@ -21,12 +21,21 @@ public class Main {
 
     // non stretch operations
     buy(jane, sodas, 3);
+    buy(jane, pretzels, 1);
+    buy(bob, sodas, 2);
+    topUp(jane, 10);
+
+  }
 
   private buy(Customer customer, Snack snack, long quantity) {
     customer.buySnacks(snack, 3);
     System.out.
       printf("%s cash on hand $%.2f", customer.getName(), customer.getCash());
+  }
+
+  private topUp(Customer customer, int cash) {
+    customer.addCash(cash);
     System.out.
-      printf("Quantity of %s is %d", snack.getName(), snack.getQuantity());
+      printf("%s cash on hand $%.2f%n%n", customer.getName(), customer.getCash());
   }
 }
