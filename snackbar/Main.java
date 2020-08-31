@@ -14,7 +14,7 @@ public class Main {
 
     // create snacks
     Snack chips = new Snack("Chips", 36, 1.75, foodMachine);
-    Snack chocolateBars = new Snack("Chocolate Bar", 36, 2.5, foodMachine);
+    Snack chocolateBars = new Snack("Chocolate Bar", 36, 1, foodMachine);
     Snack pretzels = new Snack("Pretzel", 30, 2, foodMachine);
     Snack sodas = new Snack("Soda", 24, 2.50, drinkMachine);
     Snack waters = new Snack("Water", 20, 2.75, drinkMachine);
@@ -29,7 +29,7 @@ public class Main {
     buy(bob, pretzels, 3);
 
     // Section header
-    System.out.println("Stretch Goals%n%n");
+    System.out.printf("Stretch Goals%n%n");
 
     // stretch operations
     inventory(chips);
@@ -40,7 +40,7 @@ public class Main {
   }
 
   private static void buy(Customer customer, Snack snack, int quantity) {
-    customer.buySnacks(snack, 3);
+    customer.buySnacks(snack, quantity);
     System.out.printf(
       "%s cash on hand $%,.2f%n",
       customer.getName(),
