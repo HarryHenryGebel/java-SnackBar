@@ -1,7 +1,7 @@
 package snackbar;
 
 public class Main {
-  private static void main() {
+  public static void main(String[] args) {
     // String name, double cash
     Customer jane = new Customer("Jane", 45.25);
     Customer bob = new Customer("Bob", 33.14);
