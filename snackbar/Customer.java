@@ -14,4 +14,16 @@ public class Customer {
 		this.name = name;
 		this.cash = cash;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public double getCash() {
+		return cash;
+	}
 }
