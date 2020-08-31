@@ -53,11 +53,11 @@ public class Snack {
 		this.vendingMachineId = vendingMachineId;
 	}
 
-	public void sellSnack(int num) {
+	public void sellSnacks(int num) {
 		this.quantity = quantity - num;
 	}
 
-  public void stockSnack(int num) {
+  public void stockSnacks(int num) {
 		this.quantity = quantity + num;
 	}
 }
