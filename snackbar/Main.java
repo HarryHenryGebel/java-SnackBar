@@ -29,18 +29,18 @@ public class Main {
 
   }
 
-  private buy(Customer customer, Snack snack, long quantity) {
+  private void buy(Customer customer, Snack snack, int quantity) {
     customer.buySnacks(snack, 3);
     System.out.
       printf("%s cash on hand $%.2f", customer.getName(), customer.getCash());
 
-  private stock(Snack snack, int quantity) {
+  private void stock(Snack snack, int quantity) {
     snack.stockSnacks(quantity);
     System.out.
       printf("Quantity of %s is %d%n%n", snack.getName(), snack.getQuantity());
   }
 
-  private topUp(Customer customer, int cash) {
+  private void topUp(Customer customer, int cash) {
     customer.addCash(cash);
     System.out.
       printf("%s cash on hand $%.2f%n%n", customer.getName(), customer.getCash());
