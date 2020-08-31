@@ -25,8 +25,8 @@ public class Main {
     buy(bob, sodas, 2);
     topUp(jane, 10);
     buy(jane, chocolateBar, 1);
-    stock(pretzels, 12)
-
+    stock(pretzels, 12);
+    buy(bob, pretzels, 3);
   }
 
   private static void buy(Customer customer, Snack snack, int quantity) {
