@@ -35,7 +35,9 @@ public class Customer {
 		this.cash = cash + number;
 	}
 
-		this.cash = cash - num;
 	public void buySnacks(Snack snack, int number) {
+    // remove snacks from machine
+    snack.sellSnacks(number);
+    this.cash -= number * snack.getCost();
 	}
 }
