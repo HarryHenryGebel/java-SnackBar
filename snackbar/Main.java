@@ -10,7 +10,7 @@ public class Main {
     // Create vending machines
     VendingMachine foodMachine = new VendingMachine("Food");
     VendingMachine drinkMachine = new VendingMachine("Drink");
-    VendingMachine VendingMachine = new VendingMachine("Office");
+    VendingMachine officeMachine = new VendingMachine("Office");
 
     // create snacks
     Snack chips = new Snack("Chips", 36, 1.75, foodMachine);
