@@ -26,4 +26,8 @@ public class Customer {
 	public double getCash() {
 		return cash;
 	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }
