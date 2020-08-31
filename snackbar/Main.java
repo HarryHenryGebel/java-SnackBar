@@ -14,7 +14,7 @@ public class Main {
 
     // create snacks
     Snack chips = new Snack("Chips", 36, 1.75, foodMachine);
-    Snack chocolateBar = new Snack("Chocolate Bar", 36, 2.5, foodMachine);
+    Snack chocolateBars = new Snack("Chocolate Bar", 36, 2.5, foodMachine);
     Snack pretzels = new Snack("Pretzel", 30, 2, foodMachine);
     Snack sodas = new Snack("Soda", 24, 2.50, drinkMachine);
     Snack waters = new Snack("Water", 20, 2.75, drinkMachine);
@@ -24,7 +24,7 @@ public class Main {
     buy(jane, pretzels, 1);
     buy(bob, sodas, 2);
     topUp(jane, 10);
-    buy(jane, chocolateBar, 1);
+    buy(jane, chocolateBars, 1);
     stock(pretzels, 12);
     buy(bob, pretzels, 3);
   }
