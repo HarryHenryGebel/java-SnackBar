@@ -27,6 +27,9 @@ public class Main {
     buy(jane, chocolateBars, 1);
     stock(pretzels, 12);
     buy(bob, pretzels, 3);
+
+    // stretch operations
+    inventory(chips);
   }
 
   private static void buy(Customer customer, Snack snack, int quantity) {
@@ -41,6 +44,16 @@ public class Main {
       snack.getName(),
       snack.getQuantity()
     );
+  }
+
+  private static void inventory(Snack snack) {
+    System.out.printf("Snack: %s%n", snack.getName());
+    System.out.printf(
+      "Vending Machine: %s%n",
+      snack.getVendingMachine().getName()
+    );
+    System.out.printf("Quantity: %d%n", snack.getQuantity());
+    System.out.printf("Total Cost: $%,.2f%n%n", snack.getTotalCost());
   }
 
   private static void stock(Snack snack, int quantity) {
