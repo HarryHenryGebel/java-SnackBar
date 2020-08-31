@@ -37,6 +37,13 @@ public class Main {
     inventory(pretzels);
     inventory(sodas);
     inventory(waters);
+
+    // personal stretch goal, test thousands separator
+    // Section header
+    System.out.printf("Personal stretch goal: Test thousands separator.%n%n");
+
+    Snack typewriter = new Snack("IBM Selectric III", 4, 350, officeMachine);
+    inventory(typewriter);
   }
 
   private static void buy(Customer customer, Snack snack, int quantity) {
