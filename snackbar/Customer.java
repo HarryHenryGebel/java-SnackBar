@@ -31,11 +31,11 @@ public class Customer {
 		this.name = name;
 	}
 
-	public void addCash(double num) {
-		this.cash = cash + num;
+	public void addCash(double number) {
+		this.cash = cash + number;
 	}
 
-	public void buySnacks(int num) {
 		this.cash = cash - num;
+	public void buySnacks(Snack snack, int number) {
 	}
 }
