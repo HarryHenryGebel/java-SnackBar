@@ -24,6 +24,8 @@ public class Main {
     buy(jane, pretzels, 1);
     buy(bob, sodas, 2);
     topUp(jane, 10);
+    buy(jane, chocolateBar, 1);
+    stock(pretzels, 12)
 
   }
 
@@ -31,6 +33,11 @@ public class Main {
     customer.buySnacks(snack, 3);
     System.out.
       printf("%s cash on hand $%.2f", customer.getName(), customer.getCash());
+
+  private stock(Snack snack, int quantity) {
+    snack.stockSnacks(quantity);
+    System.out.
+      printf("Quantity of %s is %d%n%n", snack.getName(), snack.getQuantity());
   }
 
   private topUp(Customer customer, int cash) {
