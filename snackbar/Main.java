@@ -28,8 +28,15 @@ public class Main {
     stock(pretzels, 12);
     buy(bob, pretzels, 3);
 
+    // Section header
+    System.out.println("Stretch Goals%n%n");
+
     // stretch operations
     inventory(chips);
+    inventory(chocolateBars);
+    inventory(pretzels);
+    inventory(sodas);
+    inventory(waters);
   }
 
   private static void buy(Customer customer, Snack snack, int quantity) {
