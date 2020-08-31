@@ -10,4 +10,12 @@ public class VendingMachine {
 		id = maximumId;
 		this.name = name;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
 }
