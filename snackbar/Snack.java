@@ -1,14 +1,14 @@
 package snackbar;
 
 public class Snack {
-	private static int maximumId = 0;
-	private int id;
+	private static long maximumId = 0;
+	private long id;
 	private String name;
-	private int quantity;
+	private long quantity;
 	private double cost;
-	private int vendingMachineId;
+	private long vendingMachineId;
 
-	public Snack(String name, int quantity, double cost, int vendingMachineID) {
+	public Snack(String name, long quantity, double cost, long vendingMachineID) {
 		maximumId++;
 		id = maximumId;
 		this.name = name;
@@ -17,7 +17,7 @@ public class Snack {
 		this.vendingMachineId = vendingMachineId;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
@@ -25,7 +25,7 @@ public class Snack {
 		return name;
 	}
 
-	public int getQuantity() {
+	public long getQuantity() {
 		return quantity;
 	}
 
@@ -33,7 +33,7 @@ public class Snack {
 		return cost;
 	}
 
-	public int getVendingMachineId() {
+	public long getVendingMachineId() {
 		return vendingMachineId;
 	}
 

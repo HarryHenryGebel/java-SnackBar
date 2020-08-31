@@ -1,8 +1,8 @@
 package snackbar;
 
 public class VendingMachine {
-	private static int maximumId = 0;
-	private int id;
+	private static long maximumId = 0;
+	private long id;
 	private String name;
 
 	public VendingMachine(String name) {
@@ -11,7 +11,7 @@ public class VendingMachine {
 		this.name = name;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
