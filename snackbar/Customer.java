@@ -32,12 +32,12 @@ public class Customer {
   }
 
   public void addCash(double number) {
-    this.cash += number;
+    cash += number;
   }
 
   public void buySnacks(Snack snack, int number) {
     // remove snacks from machine
     snack.sellSnacks(number);
-    this.cash -= number * snack.getCost();
+    cash -= number * snack.getCost();
   }
 }
