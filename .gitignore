@@ -5,6 +5,7 @@
 # Linux
 # backup files
 *~
+*#
 
 # Windows
 # thumbnails
@@ -22,7 +23,7 @@ Thumbs.db
 # Java
 *.class
 
-# packages 
+# packages
 *.jar
 *.war
 *.ear
